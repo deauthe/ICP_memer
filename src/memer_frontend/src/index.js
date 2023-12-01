@@ -1,4 +1,4 @@
-import { memer_backend } from "../../declarations/memer_backend";
+import { memera} from "../../declarations/memera/";
 
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -9,7 +9,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   button.setAttribute("disabled", true);
 
   // Interact with foo actor, calling the greet method
-  const greeting = await memer_backend.greet(name);
+  const greeting = await memera.getYourId();
 
   button.removeAttribute("disabled");
 
